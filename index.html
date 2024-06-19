@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <input type="text" id="number1" class="" placeholder="First Number">
+             <input type="text" id="number2" placeholder="Second Number">
+             <div class="btn-operators">
+                <input type="button" class="op-btn" onclick="addOperation()" value="+">
+                <input type="button" class="op-btn" onclick="subOperation()" value="-">
+                <input type="button" class="op-btn" onclick="mulOperation()" value="*">
+                <input type="button" class="op-btn" onclick="devOperation()" value="/">
+             </div>
+             <input type="button" value="RESET" class="btn" id="btnReset" onclick="reset()">
+             <div class="output-container">
+                <div class="output-box">
+                    <label for="" id="output">&nbsp;</label>
+                 </div>
+             </div>
+         </div>
+         <div class="blur-circle circle1"></div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
