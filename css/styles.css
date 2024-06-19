@@ -138,3 +138,11 @@ h1{
     justify-content: center;
     align-items: center;
 }
+.bg-circle-1{
+    width: 500px;
+    height: 500px;
+    top: -100px;
+    left: -400px;
+    filter: blur(150px);
+    opacity: 0.2;
+}
