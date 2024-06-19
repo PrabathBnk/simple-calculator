@@ -1,10 +1,13 @@
 :root{
     --primary: #09BC8A;
     --secondary: #004346;
-    --mask-base: .container;
 }
 body{
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1b27;
 }
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -52,18 +55,26 @@ input[type="text"]{
     justify-content: center;
     align-items: center;
     border-radius: 25px;
+    position: relative;
     overflow: hidden;
+    filter: drop-shadow(0px 25px 50px #07e79c3d);
+    transition: filter 0.3s;
 }
 h1{
     color: #a7fde5;
 }
+.container:hover{
+    transition: all 0.3s;
+    filter: drop-shadow(0px 25px 50px #07e79c6c);
+}
+
 .blur-circle{
     width: 150px;
     height: 150px;
     background-color: #09BC8A;
     border-radius: 9999px;
     filter: blur(50px);
-    opacity: 0.5;
+    opacity: 0.3;
     position: absolute;
     z-index: 0;
     overflow-wrap: break-word;
@@ -73,9 +84,11 @@ h1{
     top: -31px;
 }
 .circle2{
-    left: 234px;
-    top: 268px;
-    opacity: 0.3;
+    left: 237px;
+    top: 365px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.2;
 }
 
 .btn-operators{
